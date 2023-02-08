@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-red: #dd7f6e;
+  --color-cyan: #26c0ab;
+  --color-cyan-light: #a1e8e0;
+  --color-cyan-0: #f4fafa;
+  --color-cyan-1: #c5e4e7;
+  --color-cyan-2: #7f9c9f;
+  --color-cyan-3: #5e7a7d;
+  --color-cyan-4: #00494d;
+  --color-primary: var(--color-cyan);
+  --color-primary-light: var(--color-cyan-0);
+  --color-primary-dark: var(--color-cyan-4);
+  --color-background: var(--color-cyan-1);
+  --color-error: var(--color-red);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.1rem var(--color-cyan);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono", sans-serif;
+  font-size: 1.6rem;
+  color: var(--color-cyan-3);
+  background-color: var(--color-background);
+}
+
+.error {
+  transition: all 0s;
+}
+.error:focus {
+  box-shadow: 0 0 0 2px var(--color-red);
+}
